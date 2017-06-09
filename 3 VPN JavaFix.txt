@@ -4,9 +4,7 @@ A recent Java update to Java 8 build 131 changed what Java would accept as a “
 This change results in applications refusing to run with an error message like:
 preloader: Delivering: ErrorEvent[url=https://XXXXX label=attempted to open sandboxed jar https://XXXXX/.jar as a Trusted-Library cause=attempted to open sandboxed jar https://XXXXX/.jar as a Trusted-Library
 
-This occurs when the site delivering the applet is signing it with an MD5 hash. I’ve seen reports of the PulseSecure PCS and Cisco ASA doing this with the HOBsoft HOBlink Java RDP client, meaning that users are unable to securely access systems behind these devices.
-
-PulseSecure have a workaround for their PCS –https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB40580.
+This occurs when the site delivering the applet is signing it with an MD5 hash, meaning that users are unable to securely access systems behind these devices.
 
 Cisco do not currently have a solution.
 
@@ -26,7 +24,6 @@ jdk.jar.disabledAlgorithms=MD2, MD5,  RSA keySize &lt; 1024
 
 Change this to:
 jdk.jar.disabledAlgorithms=MD2,  RSA keySize &lt; 1024
-
 
 (i.e. remove the “MD5,” – use the cursor keys to move to the “MD5,” and press “x” to delete each character)
 Save the file by holding down SHIFT and pressing “Z” twice.
