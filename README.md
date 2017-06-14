@@ -1,2 +1,2 @@
 # fixes
-Fixes for various work related mac issues. Note repo.
+Fixes for various work related macOS issues for future reference.
