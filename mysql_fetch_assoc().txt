@@ -1,7 +1,7 @@
-For SubSearch/roaming
-
 Add "if ($result)" check to mysql_fetch_assoc() to eliminate error --->
 
 mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in <path>
 
 Otherwise shows "No Data available" with empty map for IMSIs that actually have roaming data.
+
+// For SubSearch/roaming
