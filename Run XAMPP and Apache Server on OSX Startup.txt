@@ -1,0 +1,33 @@
+Fire up Terminal, and run the following command:
+
+cd /Library/LaunchDaemons
+sudo atom apachefriends.xampp.apache.start.plist
+
+
+Enter your OSX password when prompted, then in nano paste the following into your new plist:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>EnableTransactions</key>
+<true/>
+<key>Label</key>
+<string>apachefriends.xampp.apache.start</string>
+<key>ProgramArguments</key>
+<array>
+<string>/Applications/XAMPP/xamppfiles/xampp</string>
+<string>startapache</string>
+</array>
+<key>RunAtLoad</key>
+<true/>
+<key>WorkingDirectory</key>
+<string>/Applications/XAMPP/xamppfiles</string>
+<key>KeepAlive</key>
+<false/>
+<key>AbandonProcessGroup</key>
+<true/>
+</dict>
+</plist>
+
+Save the file and exit nano (control+o, return, control+x).
