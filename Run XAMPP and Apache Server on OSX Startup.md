@@ -1,6 +1,7 @@
 Fire up Terminal, and run the following command:
 
-cd /Library/LaunchDaemons
+cd /Library/LaunchDaemons 
+
 sudo atom apachefriends.xampp.apache.start.plist
 
 
