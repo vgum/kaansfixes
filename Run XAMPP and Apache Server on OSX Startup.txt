@@ -1,9 +1,7 @@
 Fire up Terminal, and run the following command:
 
-cd /Library/LaunchDaemons 
-
-sudo nano apachefriends.xampp.apache.start.plist
-
+cd /Library/LaunchDaemons
+sudo atom apachefriends.xampp.apache.start.plist
 
 Enter your OSX password when prompted, then in nano paste the following into your new plist:
 
