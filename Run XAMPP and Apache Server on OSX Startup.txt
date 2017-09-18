@@ -1,9 +1,9 @@
 Fire up Terminal, and run the following command:
 
 cd /Library/LaunchDaemons
-sudo atom apachefriends.xampp.apache.start.plist
+sudo nano apachefriends.xampp.apache.start.plist
 
-Enter your OSX password when prompted, then in nano paste the following into your new plist:
+Enter your user password when prompted, then in nano paste the following into your new plist:
 
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
